@@ -9,7 +9,7 @@ module.exports = function render(ctx, r = 500, d = new Date()) {
 		ctx.stroke()
 		ctx.rotate(-pos)
 	}
-	ctx.fillStyle = '#ffffff'
+	ctx.fillStyle = '#000000'
 	ctx.translate(r, r)
 
 	ctx.beginPath()
