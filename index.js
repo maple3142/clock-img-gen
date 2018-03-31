@@ -10,4 +10,6 @@ app.get('/clock.png', (req, res) => {
 	res.send(cvs.toBuffer())
 })
 
-app.listen(7894, () => console.log(`listen on http://localhost:7894`))
+const PORT = process.env.PORT || 7894
+
+app.listen(PORT, () => console.log(`listen on http://localhost:${PORT}`))
