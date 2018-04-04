@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"canvas": "^1.6.10",
+		"compression": "^1.7.2",
 		"express": "^4.16.3"
 	},
 	"scripts": {
