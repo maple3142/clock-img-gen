@@ -5,7 +5,7 @@ const renderClock = require('./clock')
 
 app.use(compression())
 
-app.get('/clock.png', (req, res) => {
+app.get('*', (req, res) => {
 	const r = (req.query.size || 1000) / 2
 	const cvs = new Canvas(r * 2, r * 2)
 	renderClock(cvs.getContext('2d'), r)
